@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <author>Ben McGinnes</author>
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>RunFOAD</class>
+ <widget class="QWidget" name="RunFOAD">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>728</width>
-    <height>800</height>
+    <width>729</width>
+    <height>894</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,10 +17,10 @@
   <widget class="QStackedWidget" name="verticalStackedWidget">
    <property name="geometry">
     <rect>
-     <x>19</x>
-     <y>19</y>
+     <x>20</x>
+     <y>70</y>
      <width>691</width>
-     <height>291</height>
+     <height>301</height>
     </rect>
    </property>
    <widget class="QWidget" name="verticalStackedWidgetPage1" native="true">
@@ -38,8 +38,8 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>230</y>
-       <width>701</width>
+       <y>240</y>
+       <width>691</width>
        <height>21</height>
       </rect>
      </property>
@@ -118,22 +118,73 @@
     </widget>
    </widget>
   </widget>
-  <widget class="QWidget" name="verticalLayoutWidget">
+  <widget class="QDockWidget" name="dockWidget">
    <property name="geometry">
     <rect>
-     <x>19</x>
-     <y>299</y>
-     <width>691</width>
-     <height>471</height>
+     <x>-1</x>
+     <y>0</y>
+     <width>731</width>
+     <height>80</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QTextBrowser" name="textBrowser"/>
-    </item>
-   </layout>
+   <widget class="QWidget" name="dockWidgetContents">
+    <widget class="QToolBox" name="toolBox">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>0</y>
+       <width>731</width>
+       <height>871</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="toolBoxPage1" native="true">
+      <attribute name="label">
+       <string/>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="toolBoxPage2" native="true">
+      <attribute name="label">
+       <string/>
+      </attribute>
+     </widget>
+    </widget>
+   </widget>
   </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>820</y>
+     <width>181</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>370</y>
+     <width>691</width>
+     <height>441</height>
+    </rect>
+   </property>
+  </widget>
+  <zorder>dockWidget</zorder>
+  <zorder>verticalStackedWidget</zorder>
+  <zorder>verticalLayoutWidget</zorder>
+  <zorder>buttonBox</zorder>
  </widget>
+ <tabstops>
+  <tabstop>Fuck</tabstop>
+  <tabstop>Target</tabstop>
+  <tabstop>Sender</tabstop>
+  <tabstop>Extra</tabstop>
+  <tabstop>textBrowser</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
