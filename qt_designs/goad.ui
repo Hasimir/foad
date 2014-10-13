@@ -163,6 +163,19 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>830</y>
+     <width>114</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clear Screen</string>
+   </property>
+  </widget>
   <widget class="QTextBrowser" name="textBrowser">
    <property name="geometry">
     <rect>
@@ -177,6 +190,7 @@
   <zorder>verticalStackedWidget</zorder>
   <zorder>verticalLayoutWidget</zorder>
   <zorder>buttonBox</zorder>
+  <zorder>pushButton</zorder>
  </widget>
  <tabstops>
   <tabstop>Fuck</tabstop>
