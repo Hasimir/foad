@@ -55,9 +55,13 @@ class MyWindow(QWidget):
 
     def run_command(self):
         cmd = str(self.fullcmd.text())
-        stdouterr = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
+        stdouterr = subprocess.Popen(["foad.py", "-f", self.fle, "-n",
+                                      self.tle, "-s", self.sle, "-e",
+                                      self.ele], stdout=subprocess.PIPE)
         self.te.setText(stdouterr.stdout.read().decode("UTF-8"))
 
 if __name__ == "__main__":
     main()
 
+# clearly not working yet, but the aim is to have seperate text boxes
+# for each argparse flag.
