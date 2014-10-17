@@ -11,7 +11,7 @@ class Form(QDialog):
 
     def __init__(self, parent=None):
         super(Form, self).__init__(parent)
-        self.ed_1 = QLineEdit("WTF?")
+        self.ed_1 = QLineEdit("WTF")
         self.ed_2 = QLineEdit("Target")
         self.ed_3 = QLineEdit("Sender")
         self.ed_4 = QLineEdit("Extra")
@@ -55,6 +55,11 @@ class Form(QDialog):
         words = subprocess.Popen(goad, stdout=subprocess.PIPE).communicate()
         word = words[0]
         war = word.decode("utf-8").strip()
+        #print(war)
+        self.foo = QLabel(war, parent=None, f=0)
+        layout2 = QVBoxLayout()
+        layout2.addWidget(self.foo)
+        self.setLayout(layout2)
 
 
 if __name__ == "__main__":
