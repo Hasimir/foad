@@ -36,7 +36,8 @@ appreciated.
 
 ## Requirements
 
-* Python 3.2 and above.
+* Python 3.2 and above for foad.py.
+* Python 3.3 and above for flask wrapper/API.
 * Only utilises standard modules (argparse, sys, random and a couple
   of others).
 * Utilises the new standard for string formatting as of version 0.7.
