@@ -3,7 +3,7 @@ FOAD: Fucked Off Adversarial Degenerates
 
 Text based script for readily insulting people intended to be run from
 the command line or in IRC. Can be incorporated into other scripts, such
-as `Twython Tools <https://github.com/adversary-org/twython-tools>`__.
+as `Twython Tools <https://github.com/adversary-org/twython-tools>`_.
 
 To use it run: foad.py [-h/--help] -f/--fuck option [-n/--name target]
 [-s/--sender from] [-e/--extra "some paramater"] [-p/--prepend "text
@@ -52,10 +52,13 @@ https://github.com/adversary-org/foad
 Requirements
 ------------
 
--  Python 3.2 and above by default (see below).
--  Only utilises standard modules (argparse, sys, random and a couple of
-   others).
--  Utilises the new standard for string formatting as of version 0.7.
+- Python 3.2 and above by default (see below).
+- Only utilises standard modules (argparse, sys, random and a couple of
+  others).
+- Utilises the new standard for string formatting as of version 0.7.
+- EasyGUI and Tkinter needed for the EasyGUI port.  Might allow the
+  EasyGUI_Qt port, depending on licensing issues and methods of
+  invocation.
 
 Optional Python 2.7 Support
 ---------------------------
